@@ -1,0 +1,188 @@
+body
+{
+  
+background-color: rgb(6, 66, 66);
+ 
+color:white;
+height: 6000px;
+  font-family: 'Arial', sans-serif;
+      text-align: center;
+      
+}
+ 
+a{
+    margin-right: 10px;
+}
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.links
+{
+ 
+    font-size: 20px;
+    word-spacing: 10px;
+     text-align: center;
+      height: 50px;
+     background-color: black;
+     position:fixed;
+     top:0px;
+      width: 100%;
+      /* z-index: 1000; */
+      box-shadow: 0px 2px 6px rgb(6, 66, 66);
+      
+}
+
+.home
+{
+    border: 5px solid black; 
+  padding:100px;
+     border-radius: 20px;
+    box-shadow:20px 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  box-sizing:border-box;
+    margin: 50px;
+   font-size: large; 
+   font-style: normal;
+ 
+
+}
+.hobbies 
+
+{
+         
+  border: 5px solid black; 
+  padding:40px;
+     border-radius: 20px;
+      cursor: pointer;
+    box-shadow:0 10px 10px rgba(0, 0, 0, 0.1);
+    word-spacing: 10px;
+    margin: 300px;
+     flex-wrap: wrap;
+     justify-content: center;
+   
+     
+}
+img {
+      width: 500px; 
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+ 
+
+ .zoom {
+      width: 150px;
+      transition: transform 0.3s ease;
+    }
+
+    .zoom:hover {
+      transform: scale(1.2); 
+    }
+
+    h1{
+       
+      margin: 30px;
+      color: #e4d9d9;
+    }
+
+    
+
+     .image-section, .message-section {
+    
+      transition: opacity 1s ease;
+      position: absolute;
+      top:2000px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .image-section {
+      animation: hideImage 5s forwards;
+    }
+
+    .message-section {
+      opacity: 0;
+      animation: showMessage 5s forwards;
+    }
+
+    @keyframes hideImage {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    @keyframes showMessage {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    textarea {
+      width: 300px;
+      height: 100px;
+      font-size: 16px;
+      margin-top: 20px;
+      resize: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #230313;
+      border:none;
+      
+      color: white;
+    }
+ .travel{
+   position: absolute;
+      top:3000px;
+      left: 50%;
+         transform: translate(-50%, -50%);
+         
+ }
+
+ #contact
+{
+   position: absolute;
+      top:4000px;
+      left: 50%;
+        transform: translate(-50%, 50%);
+ 
+          
+ }
+  
+ input, textarea {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+     
+    
+ }
+
+ input{
+  position: relative;
+   left: 100px;
+   width: 500px;
+ }
+
+ textarea{
+  
+  position: relative;
+   left:100px;
+   width: 500px;
+ }
+
+  .cv
+  {
+     position: absolute;
+      top:5000px;
+      /* bottom: 500px; */
+      left: 50%;
+         transform: translate(-50%, -50%);
+ 
+  }
